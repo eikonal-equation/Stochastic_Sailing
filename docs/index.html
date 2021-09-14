@@ -34,7 +34,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples.html">Examples</a>
+              <a class="nav-link" href="examples.html">Examples &amp; Movies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="error_measurements.html">Error Analysis</a>
@@ -58,7 +58,13 @@
 
       <h2>Abstract </h2>
         <div class="container bg-light">
-        <p> In match race sailing, competitors must steer their ships upwind in the presence of unpredictable evolving weather. This combined with the tacking motions necessary to make upwind progress naturally lend this system to be modeled as a hybrid stochastic optimal control problem. We accelerate a semi-Lagrangian approach introduced by <a href="https://doi.org/10.1007/s10957-019-01506-x">Ferretti and Festa</a> by reformulating the state space in one fewer dimension and designing an adaptive timestep discretization which is very nearly causal. Additionally, we improve the accuracy of evaluating a switching operator by integrating over potential final wind states during a tack. We present a collection of numerical experiments demonstrating our results. 
+        <p> In match race sailing, competitors must steer their boats upwind in the presence of unpredictably evolving weather. 
+        Combined with the tacking motion necessary to make upwind progress, this makes it natural to model their path-planning as a hybrid stochastic optimal control problem.
+        Dynamic programming provides the tools for solving these, but the computational cost can be significant.
+        We greatly accelerate a semi-Lagrangian iterative approach 
+        of <a href="https://doi.org/10.1007/s10957-019-01506-x">Ferretti and Festa</a> by reducing the state space dimension and designing an adaptive timestep discretization that is very nearly causal. We also provide a more accurate tack-switching operator by integrating over potential
+        wind states after the switch.
+        The method is illustrated through a series of simulations with varying stochastic wind conditions.
         </p> 
       </div>
       </p>
@@ -77,6 +83,11 @@
       <h2>Examples </h2>
       <div class="container bg-light">
       <p><a class="btn btn-secondary" href="examples.html" role="button">View examples &raquo;</a></p>
+      </div>
+
+      <h2>Error Scaling Analysis </h2>
+      <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="error_measurements.html" role="button">View error measurements &raquo;</a></p>
       </div>
 
       

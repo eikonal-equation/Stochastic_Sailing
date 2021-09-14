@@ -34,7 +34,7 @@
               <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Examples <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Examples &amp; Movies <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="error_measurements.html">Error Analysis</a>
@@ -64,11 +64,13 @@
                 <li>The domain is a circular disk of radius \(R = 2\). </li>
                 <li>The \( (r, \theta) \) state space is discretized as a \(1601 \times 2012\) grid.</li>
                 <li>We use the polar speed profile shown to the right, which is the profile of the "Sunodyssey 40"
-                     obtained from <a href="">this site</a>.
+                     obtained from <a href="https://jieter.github.io/orc-data/site/">this site</a>.
                 </li>
                 <li>Allowed control angles \(u\) are only the provided angles (dots) of the polar speed profile.
                 <li>Our row-wise Gauss-Seidel sweeping method is used. I.e. time discretizations are chosen
                      at each gridpoint and control value as \(\tau = \Delta r / \dot{r}(r, \theta, q, u)\).
+                </li>
+                <li> In the movies, six boats are initialized at positions \((r, \theta) \in \{(1.8, 0.0), (1.93, 0.39), (1.93, -0.39)\}\), with the two boats at each position starting on different tacks \(q \in \{1, 2\}.\)
                 </li>
               </ul>
             </p>
