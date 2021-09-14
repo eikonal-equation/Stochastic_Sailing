@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Stochastic Sailing">
+    <meta name="author" content="Cole Miles">
+<!--     <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Stochastic Sailing</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <!-- <link href="album.css" rel="stylesheet"> -->
+
+    <!-- <link rel="SHORTCUT ICON" href="imgs/favicon.ico"> -->
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Stochastic Sailing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples.html">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="error_measurements.html">Error Analysis</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="jumbotron-heading">Stochastic Optimal Control of a Sailboat</h1>
+
+      <h2>Authors </h2>
+      <div class="container bg-light">
+      <ul>
+        <li> Cole Miles, Cornell University </li>
+        <li> <a href="http://pi.math.cornell.edu/~vlad">Alexander Vladimirsky</a>, Cornell University </li>
+      </ul>
+      </div>
+
+      <h2>Abstract </h2>
+        <div class="container bg-light">
+        <p> In match race sailing, competitors must steer their ships upwind in the presence of unpredictable evolving weather. This combined with the tacking motions necessary to make upwind progress naturally lend this system to be modeled as a hybrid stochastic optimal control problem. We accelerate a semi-Lagrangian approach introduced by <a href="https://doi.org/10.1007/s10957-019-01506-x">Ferretti and Festa</a> by reformulating the state space in one fewer dimension and designing an adaptive timestep discretization which is very nearly causal. Additionally, we improve the accuracy of evaluating a switching operator by integrating over potential final wind states during a tack. We present a collection of numerical experiments demonstrating our results. 
+        </p> 
+      </div>
+      </p>
+
+      <h2>Paper </h2>
+      <div class="container bg-light">
+      <p class="btn btn-secondary"> Manuscript on it's way </p>
+      </div>
+
+      <h2>Source Code </h2>
+      <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="https://github.com/eikonal-equation/Stochastic_Sailing" role="button">View source code on Github &raquo;</a>
+      </p>
+      </div>
+
+      <h2>Examples </h2>
+      <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="examples.html" role="button">View examples &raquo;</a></p>
+      </div>
+
+      
+      <h2>Acknowledgements </h2>
+      <div class="container bg-light">
+      <p>
+        The first author is supported by the U.S. Department of Energy, Office 
+        of Science, Office of Advanced Scientific Computing Research, Department of Energy Computational 
+        Science Graduate Fellowship under Award Number DE-SC0020347. The second author is partially supported
+        by the NSF DMS (awards 1738010 and 2111522).
+      </p>
+      <p>
+        We thank Elliot Cartree for providing a template for this website, originally used to host his work on
+        <a href="https://eikonal-equation.github.io/TimeDependent_SEG/index.html">Time-Dependent Surveillance-Evasion Games</a>
+      </p>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <h6>Disclaimer</h6>
+        <p class="text-muted"> 
+          This report was prepared as an account of work sponsored by an agency of the United 
+          States Government.  Neither the United States Government nor any agency thereof, nor any of their 
+          employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the 
+          accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or 
+          represents that its use would not infringe privately owned rights.  Reference herein to any specific 
+          commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not 
+          necessarily constitute or imply its endorsement, recommendation, or favoring by the United States 
+          Government or any agency thereof.  The views and opinions of authors expressed herein do not 
+          necessarily state or reflect those of the United States Government or any agency thereof.
+        </p>
+      </div>
+    </footer>
+
+    <footer class="text-muted">
+      <div class="container">
+        <h6>Copyright Notice</h6>
+        <p class="text-muted"> 
+          The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder. 
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
